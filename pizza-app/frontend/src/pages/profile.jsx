@@ -33,7 +33,7 @@ const Profile = () => {
     // Getting any profile if it already exists in the database
     const fetchUserProfile = async (email) => {
         try {
-          const response = await axios.get(` https://thekrol.github.io/PizzaSite/user/profile/${encodeURIComponent(email)}`);
+          const response = await axios.get(`http://localhost:3000/user/profile/${encodeURIComponent(email)}`);
           return response.data; // Assuming the response contains user profile data
         } catch (error) {
             throw error;

@@ -44,7 +44,7 @@ const Sidebar = () => {
 
     const fetchUserProfile = async (email) => {
         try {
-            const response = await axios.get(`https://thekrol.github.io/PizzaSite/user/profile/${encodeURIComponent(email)}`);
+            const response = await axios.get(`http://localhost:3000/user/profile/${encodeURIComponent(email)}`);
             return response.data;
         } catch (error) {
             console.error('Error fetching user profile:', error);

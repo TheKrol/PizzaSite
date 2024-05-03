@@ -11,7 +11,7 @@ export const useLogin = () => {
     setError(null);
     
     try {
-      const response = await fetch("https://thekrol.github.io/login", {
+      const response = await fetch("https://thekrol.github.io/PizzaSite/login", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PizzaSite/static/css/main.0e662e3a.css",
-    "main.js": "/PizzaSite/static/js/main.dfd64291.js",
+    "main.js": "/PizzaSite/static/js/main.1d74f920.js",
     "static/js/213.cec37e4c.chunk.js": "/PizzaSite/static/js/213.cec37e4c.chunk.js",
     "static/js/455.80938c27.chunk.js": "/PizzaSite/static/js/455.80938c27.chunk.js",
     "static/js/453.826d7ad7.chunk.js": "/PizzaSite/static/js/453.826d7ad7.chunk.js",
@@ -40,13 +40,13 @@
     "static/media/slick.woff": "/PizzaSite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/PizzaSite/index.html",
     "main.0e662e3a.css.map": "/PizzaSite/static/css/main.0e662e3a.css.map",
-    "main.dfd64291.js.map": "/PizzaSite/static/js/main.dfd64291.js.map",
+    "main.1d74f920.js.map": "/PizzaSite/static/js/main.1d74f920.js.map",
     "213.cec37e4c.chunk.js.map": "/PizzaSite/static/js/213.cec37e4c.chunk.js.map",
     "455.80938c27.chunk.js.map": "/PizzaSite/static/js/455.80938c27.chunk.js.map",
     "453.826d7ad7.chunk.js.map": "/PizzaSite/static/js/453.826d7ad7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e662e3a.css",
-    "static/js/main.dfd64291.js"
+    "static/js/main.1d74f920.js"
   ]
 }

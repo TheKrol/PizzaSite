@@ -1,0 +1,229 @@
+.menu-box {
+  display: flex;
+  padding-bottom: 0;
+}
+
+.Menu-Container {
+  max-height: 1000vh;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.Menu-item-container {
+  width: 95% !important;
+}
+
+.Pizza,
+.Salad,
+.Sides,
+.Drink {
+  color: black;
+  font-size: 36px;
+  padding: 25px;
+}
+
+.Pizza-items,
+.Salad-items,
+.Sides-items,
+.Drink-items {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  align-items: flex-start;
+}
+
+.Pizza-item,
+.Salad-item,
+.Sides-item,
+.Drink-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 31%;
+}
+
+.Pizza-text,
+.Salad-text,
+.Sides-text,
+.Drinks-text {
+  font-size: 30px;
+}
+
+.Side-text,
+.Drink-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0C5449;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Drink-text span,
+.Side-text span {
+  margin-right: 10px;
+}
+
+.Drink-text button,
+.Side-text button {
+  display: flex;
+  /* Center the button and text */
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Drink-text button:hover,
+.Sides-text button:hover {
+  background: #c83c0f;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 6%;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #c83c0f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.notdisplayed {
+  display: none;
+}
+
+.displayed {
+  display: flex;
+  position: absolute;
+  margin: auto;
+  z-index: 5;
+  background-color: #c83c0f;
+  top: 60%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  height: 40px;
+}
+
+
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row span {
+  margin-right: 0;
+}
+
+.row select {
+  width: 40px !important;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+}
+
+.Pizza-img,
+.Salad-img,
+.Sides-img,
+.Drink-img {
+  width: 100%;
+}
+
+/* Desktop styles */
+@media (min-width: 1400px) {
+
+  .Pizza-img,
+  .Salad-img,
+  .Side-img,
+  .Drink-img {
+    width: 120%;
+  }
+
+  .Side-text,
+  .Drink-text {
+    font-size: 30px;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+  }
+
+  .Drink-text button,
+  .Sides-text button {
+    font-size: 30px;
+  }
+
+  .displayed {
+    top: 60%;
+    font-size: 50px;
+    height: 65px;
+    padding: auto;
+  }
+
+  .Pizza-item,
+  .Salad-item,
+  .Sides-item,
+  .Drink-item {
+    width: 28%;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-box {
+    padding-bottom: 100%;
+    margin-bottom: 100%;
+  }
+
+  .Pizza-items,
+  .Salad-items,
+  .Sides-items,
+  .Drink-items {
+    flex-direction: column;
+  }
+
+  .Pizza-item,
+  .Salad-item,
+  .Sides-item,
+  .Drink-item {
+    width: 95%;
+  }
+
+  #myBtn {
+    bottom: 11%;
+  }
+}

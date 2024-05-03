@@ -1,0 +1,285 @@
+/* order-cart.css */
+.order-cart-container {
+  width: 100%;
+  display: flex;
+}
+
+.order-type-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 20px;
+  width: 100%;
+  background-color: #e0e0e0;
+  /* Lighter tone for contrast */
+}
+
+.order-type-radio {
+  margin: 10px;
+  text-align: right;
+}
+
+.order-type-label {
+  font-size: 16px;
+  color: #333;
+  /* Improved readability */
+
+}
+
+.order-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.order-input,
+.PatternFormat {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Updated styles for note input and text */
+.note-input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  height: 150px;
+  /* Adjusted height for better proportion */
+  box-sizing: border-box;
+  /* Include padding in the total height/width */
+  resize: vertical;
+  /* Allow vertical resizing */
+  border: 1px solid #ccc;
+  /* Add a subtle border for better visibility */
+}
+
+.note-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  /* Highlight border color on focus */
+}
+
+.Note-Text {
+  font-size: 20px;
+  line-height: 1.5;
+  /* Improved readability with increased line height */
+  color: Black;
+  /* Improved contrast for better visibility */
+}
+
+.Cart-Text {
+  font-size: 24px;
+  /* Adjust the font size */
+  color: #333;
+  /* Set the text color */
+  margin-bottom: 20px;
+  /* Add some space below the heading */
+}
+
+/* Updated styles for main-content */
+.main-content {
+  margin: 20px;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  /* Adjusted padding for better spacing */
+  box-sizing: border-box;
+}
+
+.cart-contents {
+  width: 100%;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style-type: none;
+  position: relative;
+  font-size: 18px;
+}
+
+.menu-delete-button,
+.menu-edit-button {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  top: 5px;
+  right: 10px;
+  border-radius: 6px;
+  font-size: 24px;
+}
+
+.menu-delete-button {
+  background-color: #ff4d4d;
+  /* Soft red for delete */
+}
+
+.menu-edit-button {
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  background-color: #ffc421;
+  /* Soft blue for edit */
+}
+
+.delete-button:hover,
+.edit-button:hover {
+  opacity: 0.9;
+  /* Subtle hover effect */
+}
+
+.edit-modal,
+.order-price {
+  background-color: #e6ffe6;
+  padding: 20px;
+  border-radius: 4px;
+  left: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-price p {
+  font-size: 18px;
+  margin: 10px 0;
+  /* Add margin for better spacing */
+}
+
+.place-order-button {
+  background-color: #4caf50;
+  /* Green button for placing order */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.place-order-button:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+.edit-modal-button1 {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4d88ff;
+  transition: background-color 0.3s;
+  /* Smooth transition for hover effect */
+}
+
+.edit-modal-button1:hover {
+  background-color: #356ac9;
+  /* Darker blue on hover */
+}
+
+.edit-modal-button2 {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ff4d4d;
+  transition: background-color 0.3s;
+  /* Smooth transition for hover effect */
+}
+
+.edit-modal-button2:hover {
+  background-color: rgb(204, 84, 84);
+  /* Darker blue on hover */
+}
+
+.edit-modal select,
+.edit-modal input[type="number"] {
+  padding: 3px;
+  font-size: 20px;
+  /* Adjust the font size to medium */
+}
+
+
+@media (min-width: 1200px) {
+  .li button {
+    font-size: 30px;
+  }
+
+  .edit-modal {
+    font-size: 30px;
+  }
+
+  .edit-modal input {
+    margin: 10px;
+  }
+
+  .place-order-button {
+    font-size: 26px;
+  }
+
+  .order-price {
+    font-size: 30px;
+  }
+
+  .main-content p {
+    font-size: 30px;
+  }
+
+  .main-content h3 {
+    font-size: 32px;
+  }
+
+  .order-type-label {
+    font-size: 20px;
+  }
+
+  .order-input {
+    font-size: 24px;
+  }
+
+  .edit-modal {
+    font-size: 30px;
+  }
+
+  .edit-modal input {
+    margin: 10px;
+  }
+
+  .menu-delete-button,
+  .menu-edit-button {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .menu-delete-button,
+  .menu-edit-button {
+    font-size: 16px;
+  }
+}

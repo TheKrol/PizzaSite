@@ -1,0 +1,143 @@
+/* Base Styles */
+.about-page {
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  margin: auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.header-area {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.container-text p {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Images */
+.team-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  padding: 0 20px;
+}
+
+/* Body Paragraph Styles */
+.body-paragraph {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.body-paragraph h2 {
+  color: #333;
+  font-size: 26px;
+}
+
+.body-paragraph p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.thank-you {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Body Image Styles */
+.body-image {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Member Card Styles */
+.slick-slide>div {
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.slick-slide>div:hover {
+  transform: scale(1.05);
+}
+
+.team-member-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 10px auto;
+}
+
+.slick-slide>div h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.slick-slide>div p {
+  font-size: 18px;
+}
+
+/* Slider Dots Styles */
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff5722;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header-area {
+    font-size: 2rem;
+  }
+
+  .container-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .header-area {
+    font-size: 1.5rem;
+  }
+
+  .container-text {
+    font-size: 0.875rem;
+  }
+}

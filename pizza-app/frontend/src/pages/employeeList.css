@@ -1,0 +1,272 @@
+.employee-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* List Container Styles */
+.list-container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.header-emp-list {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.employee-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.employee-list th {
+  font-size: 20px;
+  background-color: #f8f8f8;
+}
+
+.employee-list th,
+.employee-list td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.employee-list th {
+  background-color: #f0f0f0;
+}
+
+.employee-list th:first-child,
+.employee-list td:first-child {
+  width: 20%;
+}
+
+.employee-list th:last-child,
+.employee-list td:last-child {
+  width: 15%;
+}
+
+.employee-list th.actions,
+.employee-list td.actions {
+  width: 10%;
+}
+
+.employee-details {
+  width: 100%;
+}
+
+.em-table {
+  font-size: 17px;
+}
+
+.employee-details .header-details {
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+.employee-details .employee-details-box {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.employee-details .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.employee-details .form-field input {
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.employee-details .form-field input[type="date"] {
+  width: calc(100% - 20px);
+}
+
+.employee-details .form-field button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ffc421;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.employee-details .form-field button:hover {
+  background-color: #fdd567;
+}
+
+.edit-emp-button {
+  padding: 5px 10px;
+  font-size: 18px;
+  color: black;
+  background-color: #ffc421;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.edit-emp-button:hover {
+  background-color: #fdd567;
+  color: black;
+}
+
+.delete-emp-button {
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-emp-button:hover {
+  background-color: #ff6b6b;
+}
+
+.time-emp-button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 17px;
+  color: black;
+  background-color: #ffc421;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.time-emp-button:hover {
+  background-color: #fdd567;
+  color: black;
+}
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+
+  .header-emp-list {
+    font-size: 28px;
+  }
+
+  .list-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .employee-list th,
+  .employee-list td {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .employee-details .header-details {
+    font-size: 20px;
+  }
+
+  .employee-details .employee-details-box {
+    max-width: 100%;
+  }
+
+  .employee-details .form-field input[type="date"] {
+    width: 100%;
+  }
+
+  .employee-details .form-field button {
+    padding: 8px 16px;
+  }
+}
+
+/* Additional styles for very small screens */
+@media screen and (max-width: 768px) {
+  .header-emp-list {
+    font-size: 24px;
+  }
+
+  .employee-list th:first-child,
+  .employee-list td:first-child {
+    width: 30%;
+  }
+
+  .employee-list th:last-child,
+  .employee-list td:last-child {
+    width: 20%;
+  }
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover and focus styles for input and select */
+.search-bar input[type="text"]:hover,
+.search-bar input[type="text"]:focus,
+.search-bar select:hover,
+.search-bar select:focus {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(19, 19, 20, 0.5);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input[type="text"],
+  .search-bar select {
+    width: 100%;
+  }
+}

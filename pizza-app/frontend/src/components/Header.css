@@ -1,0 +1,21 @@
+.header {
+  background-color: #c83c0f;
+  display: flex;
+  /* justify-content: space-between; */
+  /* width: 100%; */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    /* align-items: center; */
+    width: 229%;
+  }
+}
+
+.header-main {
+  color: white;
+  margin: 20px 0 20px 15px;
+}
+

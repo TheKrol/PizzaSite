@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.time-entry-page-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  /* Space for footer */
+}
+
+
+.time-content {
+  width: 100%;
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ebeae8;
+}
+
+/* Styles for the time clock and name/status 
+
+.employee-name-status,
+.working-hours {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 24px;
+}*/
+
+/*
+.status-badge {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+}*/
+
+.clock-in {
+  background-color: #28a745;
+  /* Green for clocked in */
+}
+
+.clock-out {
+  background-color: #dc3545;
+  /* Red for clocked out */
+}
+
+.btn-clock-in {
+  background-color: #007bff;
+}
+
+.btn-clock-out {
+  background-color: #dc3545;
+}
+
+.btn-clock-in:hover,
+.btn-clock-out:hover {
+  background-color: #ffc421;
+  color: black;
+}
+
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Buttons container with more space */
+.clock-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  justify-content: space-around;
+  max-width: 400px;
+
+}
+
+.text-center {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+
+/* Clock Styles */
+.clock,
+.clock-img {
+  display: flex;
+  justify-content: space-around;
+  max-width: 410px;
+  margin: 20px auto;
+}
+
+.update-button {
+  background: #ffc421;
+  color: #fff;
+}
+
+/* Button Styles */
+.btn {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+/* Additional styling for the button if needed */
+.btn-primary {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0C5449;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #ffc421;
+  color: black;
+}
+
+
+/* Large screens */
+@media (min-width: 993px) {
+  .time-square {
+    width: 650px;
+    margin: auto;
+    padding: 20px;
+  }
+}
+
+.clock-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  justify-content: space-around;
+  max-width: 380px;
+
+}
+
+.clock,
+.clock-img {
+  display: flex;
+  justify-content: space-around;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Table Header Styles */
+.table thead {
+  background-color: #0C5449;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Table Row Styles */
+.table tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+/* Actions Column Styles */
+.actions-column {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Edit and Delete Button Styles */
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background: #ffc421;
+  color: black;
+}
+
+
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #ffc421;
+  color: black;
+}

@@ -1,0 +1,366 @@
+.edit-item-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #ebeae8;
+    padding-bottom: 30px;
+    width: 720px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.item-edit-header {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.inv-edit-buttons-top {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inv-edit-buttons-top button {
+    width: 180px;
+    height: 40px;
+    color: black;
+    background: #ffc421;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+}
+
+.inv-edit-buttons-top button:hover {
+    background: #fdd567;
+}
+
+.edit-inv-search {
+    color: #000000;
+    padding-bottom: 20px;
+    width: 660px;
+}
+
+.edit-inv-search input {
+    font-size: 18px;
+}
+
+.edit-inv-table {
+    width: 680px;
+}
+
+.edit-table-header {
+    width: 680px;
+}
+
+.edit-head {
+    font-size: 20px;
+}
+
+.table-edit-name {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.table-edit-name input {
+    width: 100px;
+    font-size: 18px;
+}
+
+.table-edit-quantity {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.table-edit-quantity input {
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    border: none;
+    height: 40px;
+}
+
+.table-edit-quantity select {
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    border: none;
+    height: 40px;
+}
+
+.success-message-inv-edit {
+    display: flex;
+    color: green;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.error-message-inv-edit {
+    display: flex;
+    color: red;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.button-row {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ebeae8;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    width: 720px;
+}
+
+.button-row td {
+    height: 35px;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button-save,
+.button-delete {
+  margin: 5px; 
+}
+
+.button-save {
+    width: 100px;
+    height: 35px;
+    color: #000000;
+    background: #ffc421;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+
+.button-save:hover {
+    background: #fdd567;
+}
+
+.button-delete {
+    width: 100px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    background: #f44336;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+}
+
+.button-delete:hover {
+    background: #ff6b6b;
+}
+
+
+@media (max-width: 1024px) {
+    .edit-item-form {
+        width: 620px;
+    }
+
+    .item-edit-header {
+        font-size: 28px;
+    }
+
+    .item-edit-save button {
+        width: 140px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .inv-edit-buttons-top button {
+        width: 140px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .edit-inv-search {
+        width: 560px;
+    }
+
+    .edit-inv-search input {
+        font-size: 16px;
+    }
+
+    .table-edit-quantity select {
+        font-size: 16px;
+    }
+
+    .edit-inv-table {
+        width: 580px;
+    }
+
+    .edit-table-header {
+        width: 580px;
+    }
+
+    .edit-head {
+        font-size: 18px;
+    }
+
+    .table-edit-name {
+        font-size: 16px;
+    }
+
+    .table-edit-name input {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .table-edit-quantity {
+        font-size: 16px;
+    }
+
+    .table-edit-quantity input {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .table-edit-quantity select {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .success-message-inv-edit {
+        font-size: 16px;
+    }
+
+    .error-message-inv-edit {
+        font-size: 16px;
+    }
+
+    .button-row {
+        width: 580px;
+    }
+    
+    .button-row td {
+        height: 30px;
+    }
+
+    .button-save {
+        width: 80px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .button-delete {
+        width: 80px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .edit-item-form {
+        width: 450px;
+    }
+
+    .item-edit-header {
+        font-size: 24px;
+    }
+
+    .item-edit-save button {
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .inv-edit-buttons-top button {
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .edit-inv-search {
+        width: 400px;
+    }
+
+    .edit-inv-search input {
+        font-size: 14px;
+    }
+
+    .edit-inv-table {
+        width: 400px;
+    }
+
+    .edit-table-header {
+        width: 400px;
+    }
+
+    .edit-head {
+        font-size: 16px;
+    }
+
+    .table-edit-name {
+        font-size: 14px;
+    }
+
+    .table-edit-name input {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .table-edit-quantity {
+        font-size: 14px;
+    }
+
+    .table-edit-quantity input {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .table-edit-quantity select {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .success-message-inv-edit {
+        font-size: 16px;
+    }
+
+    .error-message-inv-edit {
+        font-size: 16px;
+    }
+    
+    .button-row {
+        width: 400px;
+    }
+    
+    .button-row td {
+        height: 30px;
+    }
+
+    .button-save{
+        width: 60px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .button-delete {
+        width: 60px;
+        height: 30px;
+        font-size: 14px;
+    }
+}

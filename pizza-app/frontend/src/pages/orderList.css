@@ -1,0 +1,265 @@
+.order-track-box {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.order-list-container {
+    overflow: auto;
+    width: calc(100% - 40px);
+    max-width: 1350px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.order-list-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.search-and-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.select-container {
+    min-width: 200px;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+
+.order-type-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.order-status select {
+    width: auto;
+    padding: 10px;
+    padding-right: 0%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    appearance: none;
+    cursor: pointer;
+
+}
+
+.select-container::after {
+    content: "\25BC";
+    font-size: 16px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.responsive-table th,
+.responsive-table td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.responsive-table th {
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.responsive-table tr:hover {
+    background-color: #e9e9e9;
+}
+
+.order-item {
+    margin-bottom: 10px;
+    padding: 10px;
+
+    border-radius: 8px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-item:hover {
+    transform: translateY(-2px);
+
+}
+
+.order-item button {
+    background: whitesmoke;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-item button:hover {
+    background: #fdd567;
+}
+
+.order-item h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pagination button {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    min-width: 35px;
+    text-align: center;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .pagination button {
+        padding: 3px 6px;
+        font-size: 0.8rem;
+        margin: 2px;
+    }
+}
+
+
+.totals {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 90%;
+}
+
+.close-button {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .responsive-table th,
+    .responsive-table td {
+        padding: 8px;
+    }
+
+    .responsive-table th.status,
+    .responsive-table td.status {
+        display: none;
+    }
+
+    .search-and-filter,
+    .select-container,
+    .search-input {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .select-container,
+    .search-input {
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .order-track-box {
+        flex-direction: column;
+    }
+
+    .order-list-container {
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .order-list-container {
+        padding: 10px;
+    }
+}

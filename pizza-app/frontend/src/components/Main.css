@@ -1,0 +1,104 @@
+/* Main CSS */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  width: 100;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.order-now-button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.order-now-button a {
+  padding: 20px 40px;
+  background-color: #ff9800;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  animation: highlight 3s ease infinite;
+}
+
+
+.about-us-button {
+  position: relative;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+
+.about-us-button a {
+  padding: 10px 30px;
+  /* Adjust padding for a larger button */
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  /* Add transition for smooth effect */
+}
+
+.about-us-button a:hover {
+  background-color: #FFCC33;
+  color: white;
+}
+
+
+
+/* Animation to highlight the button */
+@keyframes highlight {
+  0% {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: #FF5733;
+    /* Different highlighting color */
+  }
+
+  100% {
+    background-color: #ff9800;
+  }
+}
+
+/* Responsive button size based on screen width */
+@media (max-width: 768px) {
+  .order-now-button a {
+    padding: 15px 30px;
+    font-size: 24px;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .order-now-button a {
+    padding: 12px 24px;
+    font-size: 20px;
+  }
+}

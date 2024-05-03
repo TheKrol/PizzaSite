@@ -1,0 +1,124 @@
+.byo-container {
+    display: flex;
+    overflow: auto;
+}
+
+.byo-content {
+    margin-left: 25px;
+    height: auto;
+    margin-right: 25px;
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+}
+
+.byo-text {
+    margin-left: 15px;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.size-select, .sauce-select, .quantity-select, .crust-select {
+    /* Add styles for your select inputs here */
+    display: block;
+    width: auto;
+    font-size: 22px;
+    margin-top: 15px; /* Add space between selects */
+    margin-bottom: 15px;
+}
+
+/* Add styles to align checkboxes with text */
+.label-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 5px;
+    flex-grow: 1;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.PriceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.Price {
+    margin-bottom: 10px;
+}
+
+.toppings, .meats, .veggie {
+    font-size: 18px;
+}
+
+.label-container input {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 40px;
+    width: 120%; 
+}
+
+.checkbox-column {
+    flex: 1;
+    box-sizing: border-box;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+.AddToCart{
+    display: flex;
+    gap: 30px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    color: black;
+    background: #ffc421;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+}
+
+.AddToCart:hover {
+    color: black;
+    background: #fdd567;
+    cursor: pointer;
+}
+
+
+@media (min-width: 769px) {
+    .label-container {
+      width: 60px;
+    }
+  }
+
+@media (max-width: 768px) {
+    .byo-img {
+        width: 100px;
+    }
+    .size-select, .sauce-select, .quantity-select, .crust-select {
+        font-size: 18px;
+    }
+    .byo-text {
+        font-size: 20px;
+    }
+    .label-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Adjust alignment for mobile */
+        padding: 5px; /* Add padding on all sides for better spacing */
+        font-size: 18px; /* Reduce font size for mobile */
+        white-space: nowrap;
+        width: 50px;
+    }
+}

@@ -1,0 +1,198 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #ebeae8;
+    padding-bottom: 30px;
+    width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.main-container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containter-for-inputs {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cont-input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 60px;
+    background: #cccbc9;
+    border-radius: 6px;
+}
+
+.cont-input input {
+    height: 40px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.cont-input select {
+    height: 40px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 5px;
+    
+}
+
+.form-save {
+    display: flex;
+    gap: 30px;
+    margin: 20px auto;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    color: black;
+    background: #ffc421;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+}
+
+.form-save button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    width: 220px;
+    align-self: center;
+}
+
+.form-save:hover {
+    background: #fdd567;
+}
+
+.success-message-track-form {
+    display: flex;
+    color: green;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.error-message-track-form {
+    display: flex;
+    color: red;
+    justify-content: center;
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        width: 500px;
+    }
+    
+    .main-container-header {
+        font-size: 28px;
+    }
+    
+    .cont-input {
+        width: 300px;
+        height: 50px;
+    }
+    
+    .cont-input input {
+        height: 40px;
+        width: 300px;
+        font-size: 16px;
+    }
+    
+    .cont-input select {
+        height: 40px;
+        width: 300px;
+        font-size: 16px;
+    }
+    
+    .form-save {
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .form-save button {
+        font-size: 16px;
+        width: 180px;
+    }
+    
+    .success-message-track-form {
+        font-size: 16px;
+    }
+    
+    .error-message-track-form {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 400px;
+    }
+    
+    .main-container-header {
+        font-size: 24px;
+    }
+    
+    .cont-input {
+        width: 200px;
+        height: 50px;
+    }
+    
+    .cont-input input {
+        height: 40px;
+        width: 200px;
+        font-size: 14px;
+    }
+    
+    .cont-input select {
+        height: 40px;
+        width: 200px;
+        font-size: 14px;
+    }
+    
+    .form-save {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .form-save button {
+        font-size: 14px;
+        width: 120px
+    }
+    
+    .success-message-track-form {
+        font-size: 14px;
+    }
+    
+    .error-message-track-form {
+        font-size: 14px;
+    }
+}

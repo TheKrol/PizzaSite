@@ -1,0 +1,89 @@
+/* Styles for the navigation bar container */
+.NavBar {
+    background-color: #ff6600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #ff6600;
+}
+
+/* Styles for the navigation links container */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    /* Center the navigation links */
+}
+
+/* Style for anchor (a) tags */
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font: bold;
+    padding: 8px 12px;
+    border: 1px solid #161514;
+    border-radius: 8px;
+    font-size: 16px;
+    /* Default font size for small screens */
+    transition: color 0.3s, font-size 0.3s, background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    text-align: center;
+}
+
+.nav-links a:hover {
+    background-color: yellow;
+    font-size: large;
+    color: #ff6600;
+}
+
+/* Add a class for the cart link */
+.cart-link {
+    white-space: nowrap;
+    /* Prevent line breaks for the cart text */
+}
+
+/* Styles for larger screens (e.g., desktop) */
+@media (min-width: 601px) {
+    .nav-links a {
+        font-size: 20px;
+        /* Adjust font size for medium screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-links a {
+        font-size: 24px;
+        /* Adjust font size for larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-links a {
+        font-size: 28px;
+        /* Adjust font size for extra-large screens */
+    }
+}
+
+/* Styles for smaller screens (e.g., mobile) */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        /* Stack navigation links vertically for small screens */
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        /* Adjust font size for small screens */
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,183 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #ebeae8;
+  padding-bottom: 30px;
+  width: 600px;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: verdana;
+  padding-bottom: 20px;
+}
+
+.profile-details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.profile-details strong {
+  font-weight: bold;
+  min-width: 150px;
+  color: #333;
+}
+
+.profile-details input {
+  height: 20px;
+  width: 380px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  height: 65px;
+  background: #cccbc9;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.profile-details button {
+  background-color: #ffc421;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-details button:hover {
+  background-color: #fdd567;
+  color: black;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-submit button {
+  background-color: #ffc421;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+/* Style for disabled button */
+.button-submit button:disabled {
+  color: #888;
+  cursor: not-allowed;
+}
+
+.button-submit button:hover {
+  background-color: #fdd567;
+  color: black;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.error-message {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+
+  .profile-details span {
+    transform: translateX(-110%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .container-header {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .profile-details strong {
+    min-width: 130px;
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+
+  .button-submit button {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .profile-details {
+    font-size: 18px;
+  }
+
+  .profile-details span {
+    transform: translateX(-25%);
+  }
+}

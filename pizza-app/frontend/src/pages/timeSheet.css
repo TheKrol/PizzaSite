@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.time-entry-page-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  /* Space for footer */
+}
+
+
+.time-content {
+  width: 100%;
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ebeae8;
+}
+
+/* Styles for the time clock and name/status */
+.header-time {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: black;
+
+}
+
+.current-time {
+  font-family: 'Digital Clock Font', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #5A3F37, #2C7744);
+  padding: 20px;
+  border-radius: 10px;
+  animation: pulse 2s infinite;
+
+
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Time box Design */
+
+.time-box {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 720px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.employee-name-status {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.status-badge {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: white;
+}
+
+.employee-name-status,
+.working-hours {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+
+}
+
+.status-badge {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.clock-in {
+  background-color: #28a745;
+  /* Green for clocked in */
+}
+
+.clock-out {
+  background-color: #dc3545;
+  /* Red for clocked out */
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-clock-in {
+  background-color: #28a745;
+}
+
+.btn-clock-out {
+  background-color: #dc3545;
+}
+
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: default;
+  /* Default cursor for disabled state */
+}
+
+
+
+
+/* Buttons container with more space */
+.clock-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+/* Table Styles */
+.time-entries-table {
+  margin-top: 20px;
+}
+
+.time-entries-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.time-entries-table th,
+.time-entries-table td {
+  padding: 50px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.time-entries-table th {
+  background-color: #0C5449;
+  color: white;
+}
+
+.time-entries-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Modal Background */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0%;
+}
+
+/* Modal Content */
+.ReactModal__Content {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  padding-bottom: 100px;
+  max-width: 500px;
+  justify-content: center;
+  width: 80%;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Inner Content */
+.edit-modal {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+}
+
+.header-modal {
+  color: #333;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+/* Form Styles */
+.modal-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.modal-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  flex-basis: 48%;
+  /* Slightly less than half to account for the gap */
+}
+
+.cancel-button {
+  background: #ccc;
+}
+
+.em-update-button {
+  background: #ffc421;
+  color: black;
+}
+
+.em-update-button:hover {
+  background: #fdd567;
+}
+
+.cancel-button:hover {
+  background-color: #b3b3b3;
+}
+
+
+.page-link {
+  font-size: 20px;
+  /* You can add other styling properties here if needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .time-sheet-container {
+    padding: 10px;
+  }
+
+  .clock-buttons button {
+    padding: 5px 10px;
+  }
+
+  .time-entries-header button {
+    padding: 5px 10px;
+  }
+
+  .clock-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    justify-content: space-around;
+    max-width: 380px;
+
+  }
+
+  .current-time {
+    padding: 10px;
+  }
+
+  .clock,
+  .clock-img {
+    display: flex;
+    justify-content: space-around;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .edit-form {
+    padding: 10px;
+  }
+
+  .edit-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .form-group input {
+    padding: 8px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .update-button {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Table Header Styles */
+.table thead {
+  background-color: #0C5449;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Table Row Styles */
+.table tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+/* Actions Column Styles */
+.actions-column {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Edit and Delete Button Styles */
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-button {
+  background: #007bff;
+  color: #fff;
+
+}
+
+.btn-delete {
+  background: #ff0000;
+  color: #fff;
+}
+
+
+.btn-delete {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status-badge {
+  background-color: #555;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.status-badge.clock-in {
+  background-color: #4CAF50;
+}
+
+.time-text-center {
+  text-align: center;
+  font-size: 30px;
+
+  color: #333;
+
+  margin-top: 10px;
+
+  margin-bottom: 10px;
+
+}

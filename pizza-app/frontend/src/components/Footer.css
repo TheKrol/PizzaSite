@@ -1,0 +1,35 @@
+.footer {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Center content for tablet and mobile */
+@media (max-width: 768px) {
+
+  .scroll-wrapper,
+  .footer {
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .footer a {
+    margin: 0 5px;
+    /* Adjust margin for smaller screens */
+  }
+}

@@ -10,7 +10,7 @@ export const useSignup = () => {
     setIsLoading(true);
     setError(null);
 
-    const response = await fetch(" https://thekrol.github.io/PizzaSite/user/signup", {
+    const response = await fetch("https://thekrol.github.io/PizzaSite/user/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password, role })
